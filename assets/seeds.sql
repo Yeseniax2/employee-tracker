@@ -11,5 +11,4 @@ VALUES ("Customer care assoicate", 30000,1),
 INSERT INTO employee (first_name, last_name, role_id)
 VALUES ("Sam", "Cuz",2),
        ("Ashley", "Smith",1),
-       ("Bob", "Lee",3),
-       
+       ("Bob", "Lee",3);

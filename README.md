@@ -1,2 +1,3 @@
 ## Employee Tracker
-### Description: The goal of thid spp is to use a node backend with inquirer to enable user management and other departmentsin the mysql database.
+## Description:
+The goal for this tracker app was to manage a companys employee database, using node.js Inquirer, and MySql.
