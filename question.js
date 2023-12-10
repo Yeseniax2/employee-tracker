@@ -23,7 +23,20 @@ const i prompts = {
         },
         
         {
-            
+            type: "input",
+            name: "roleTitle",
+            message: "what is the title of the role?"
+        },
+        {
+            type: "number",
+            name: "roleSalary",
+            messgae: "what is the yearly salary for this role?"
+        },
+        {
+            type: "list",
+            name: "roleDepartment",
+            message: "Which department does this role belong to?",
+            choices: []
         }
     ]
 
