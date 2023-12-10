@@ -38,6 +38,50 @@ const i prompts = {
             message: "Which department does this role belong to?",
             choices: []
         }
+    ],
+    addEmployeePrompt: [
+        {
+            type:"input"
+            name: "first_name",
+            message: "What is the employee's first name?"
+        },
+        {
+            type: "input",
+            name: "last_name",
+            message: "What is the employee's last name?"
+        },
+        updateEmployeePrompt: [
+            {
+                type: "list",
+                name: "employeeChoice",
+                message: "Which employee would you like to update?",
+                choices: []
+            },
+            {
+                type: 'list',
+                name: 'updateRole',
+                message: "What is the employee's new role?",
+                choices: []
+            }
+    ],
+    deleteRolePrompt: [
+        {
+            type: "list",
+            name: "deleteRole",
+            message: "Which role would you like to delete?",
+            choices: []
+        }
+    ],
+    deleteEmployeePrompt: [
+        {
+            type: "list",
+            name: "deleteEmployee",
+            message: "Which employee would you like to delete?",
+            choices: []
+        }
     ]
-
 }
+
+module.exports = iPrompts
+
+
