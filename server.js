@@ -8,4 +8,4 @@ const connection= mysql.createConnection({
     user: 'root'
     password: 'docker123'
     database:
-})
+});
