@@ -45,11 +45,13 @@ const iPrompts = {
             name: "first_name",
             message: "What is the employee's first name?"
         },
+        
         {
             type: "input",
             name: "last_name",
             message: "What is the employee's last name?"
         },
+    ],
         updateEmployeePrompt: [
             {
                 type: "list",
