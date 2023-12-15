@@ -80,4 +80,4 @@ const addDepartment = (newDepartment) => {
         .then(() => console.clear())
         .then(() => console.log(`${JSON.stringify(newDepartment)} was successfully added as a department`))
         .then(() => startProgram());
-}
+}.
