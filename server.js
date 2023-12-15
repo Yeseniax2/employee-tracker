@@ -1,14 +1,13 @@
-const mysql = require('mysql');
 const inquirer = require('inquirer');
-
-const connection= mysql.createConnection({
+const mysql = require('mysql12')
+const connection = mysql.createConnection({
 
     host:'localhost',
-    port:3306
-    user: 'root'
-    password: 'docker'
+    user: 'root',
+    password: 'docker',
     database: 'employed_tracker'
-});
+}, console.log(`Connected to the Employee Tracker database.`));
+
 
 const iPrompts = require('./config/questions')
 const viewTable = (tableName) => {
@@ -74,10 +73,9 @@ const viewTable = (tableName) => {
         .then(() => startProgram())
 }
 
-//Adds the desired department to the database
 const addDepartment = (newDepartment) => {
     db.promise().query(`INSERT INTO departments(name) VALUES('${newDepartment}')`)
         .then(() => console.clear())
         .then(() => console.log(`${JSON.stringify(newDepartment)} was successfully added as a department`))
         .then(() => startProgram());
-}.
+}

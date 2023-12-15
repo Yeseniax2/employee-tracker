@@ -1,9 +1,9 @@
-const i prompts = {
+const iPrompts = {
     questions:[
         {
             type:'list',
             name: 'start',
-            message: what would you like to do?
+            message: 'what would you like to do?',
 
             choices : [
                 'view all departments',
@@ -41,7 +41,7 @@ const i prompts = {
     ],
     addEmployeePrompt: [
         {
-            type:"input"
+            type:"input",
             name: "first_name",
             message: "What is the employee's first name?"
         },
@@ -62,7 +62,7 @@ const i prompts = {
                 name: 'updateRole',
                 message: "What is the employee's new role?",
                 choices: []
-            }
+            },
     ],
     deleteRolePrompt: [
         {
