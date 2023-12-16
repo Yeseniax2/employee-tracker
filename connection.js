@@ -5,7 +5,7 @@ const mysql = require('mysql2');
 const db = mysql.createConnection({
     host: 'localhost',
     user: 'root',
-    password: 'docker123',
+    password: 'docker',
     database: 'employee_tracker',
 
 });
