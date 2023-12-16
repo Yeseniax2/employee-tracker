@@ -8,7 +8,6 @@ const db = mysql.createConnection({
     database: 'employee_db'
 }, console.log(`Connected to the Employee Tracker database.`));
 
-
 const iPrompts = require('./config/questions')
 const viewTable = (tableName) => {
     let query = ``
