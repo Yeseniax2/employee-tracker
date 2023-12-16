@@ -1,6 +1,14 @@
 const inquirer = require('inquirer');
 const mysql = require('mysql')
 
+const db = mysql.createConnection({
+    host: 'localhost',
+    user: 'root',
+    password: 'docker',
+    database: 'employee_db'
+}, console.log(`Connected to the Employee Tracker database.`));
+
+
 const iPrompts = require('./config/questions')
 const viewTable = (tableName) => {
     let query = ``
